@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services and Equipment Catalog - Forktech SAS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "accent": "#f97316",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "card-dark": "#1c2636",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Header / Top Bar -->
+<header class="sticky top-0 z-50 flex items-center bg-slate-900 border-b border-slate-800 p-4 justify-between">
+<div class="text-white flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+<h1 class="text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center">Forktech SAS</h1>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-transparent text-white">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</header>
+<main class="pb-24">
+<!-- Hero Section -->
+<div class="relative h-48 w-full bg-slate-800 flex items-end p-6 overflow-hidden">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="Industrial warehouse with forklifts and logistics equipment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMnlkAo-uVACbvtXQ_dFyzYYUCJwvTHG-b03nI7kckoTwL2rpEOaK0N5vLwdDyEArEwtYbi7-ZBOrYXuP0iKTfKId36-wKHXcxOb3C25E_i2GVR5NKQfWuWyuxumGkvldpOBIFQOSuXQS2J9Ja-NjzyyJ-IEDTFFZovNIaWvRpulQuDjN0drPR-ftZPp80E5yBJbj43YkS0Bcwk88ZGed7g3F-Ne4ytioO2j8afGGPpy8VafJqrv7pgDbXK_j4EImZKxLwHuHPT54')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent"></div>
+<div class="relative z-10">
+<h2 class="text-white text-2xl font-bold">Catálogo Pro</h2>
+<p class="text-slate-300 text-sm">Servicios y Equipos en Bogotá</p>
+</div>
+</div>
+<!-- Services Section -->
+<section class="px-4 pt-6">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-xl font-bold tracking-tight">Nuestros Servicios</h2>
+<span class="text-accent text-sm font-semibold">Ver todos</span>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Service Card 1 -->
+<div class="flex bg-slate-100 dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="w-32 h-32 shrink-0 bg-cover bg-center" data-alt="Technician performing preventive maintenance on forklift" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAItpVGqsLCtVnWYvA8X7uzBTYTy_ZMvz4CKScMQEwOXe37A_SU6r6iVD1tRS_ko8aPzQncOLPHIxX86h_72dx26xPF8Txzl0op9vOl-3zHuVqw-Y4pytkTqZpi7juodyz-vCUNEP2aKBfV9jqXLXxqaeiEvpFfUWCZGiu12kCYz13P2p5KrrP_DlG5mnWU5vK7F-WW3QP1vv5hiC5v48nsnTAlXBPxFM6xHL2FO_FeoqxjWOCM_EMGf9JV9YhFWb6nNVXS9krAGG4')"></div>
+<div class="p-4 flex flex-col justify-between flex-1">
+<div>
+<h3 class="font-bold text-base">Mantenimiento Preventivo</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Evite paradas inesperadas y alargue la vida útil.</p>
+</div>
+<button class="mt-2 self-start px-3 py-1 bg-accent text-white text-xs font-bold rounded-full">Más Información</button>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="flex bg-slate-100 dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="w-32 h-32 shrink-0 bg-cover bg-center" data-alt="Mechanical parts and tools for repair" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZRxpp-GFwVc-56j6FCqXgYmsw0WshaLYRbUmSH8sYl2fxMrVrlIdQik0AnfXAOQRgRJU_4tQF4k4U2Rc3K9W6-qOCMx-NSXAS1iJr9wTD8Lf2Z5piX7HTj7W3J62cJBG990csU3YOD6875p1ZheWl-s5H-I3zTXwrN7hxkLnk03FMSulscQXQNh_3da6fyil6HK8csVeFamlUzIdySb8R-e8TQQDujLU7TfXvqsqaS_aqQdkb9rc3EvM1nfpSeQ38VoBUwpoelkI')"></div>
+<div class="p-4 flex flex-col justify-between flex-1">
+<div>
+<h3 class="font-bold text-base">Mantenimiento Correctivo</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Reparaciones técnicas de alta complejidad.</p>
+</div>
+<button class="mt-2 self-start px-3 py-1 bg-accent text-white text-xs font-bold rounded-full">Más Información</button>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="flex bg-slate-100 dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="w-32 h-32 shrink-0 bg-cover bg-center" data-alt="Close up of mechanical gears and spare parts" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBt57EGJoIaZUFB7ZRqsAKg6smCrcNfIGWfeWt6b7qT-9YzWenoYlf4_WeoUShGVJiIivPd8fnckpx1iQQsL9YapvURIOMoOjPCR8M2Oth56_Jvv4fYO8cPPQx0zZq70osxE8xBMWISRPTQg-Ql5Ptu13S2AEvIMVHDEVX5yiNnMeD-dZ89HYJyzXUWcIflmqBAa_zvjOs08bLuyRpZ6aL6sBsuvKtta1uLa4QlhDnY-6ymN9U1xa1PdwpEzjJLGRyjk3u8I5grYtA')"></div>
+<div class="p-4 flex flex-col justify-between flex-1">
+<div>
+<h3 class="font-bold text-base">Venta de Repuestos</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Partes originales para todas las marcas.</p>
+</div>
+<button class="mt-2 self-start px-3 py-1 bg-accent text-white text-xs font-bold rounded-full">Más Información</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Equipment Section -->
+<section class="px-4 pt-8">
+<h2 class="text-xl font-bold tracking-tight mb-4">Equipos Logísticos</h2>
+<div class="grid grid-cols-2 gap-3">
+<!-- Equipment 1 -->
+<div class="bg-slate-100 dark:bg-card-dark rounded-xl p-3 border border-slate-200 dark:border-slate-800">
+<div class="aspect-square bg-slate-200 dark:bg-slate-900 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+<img class="object-contain" data-alt="Modern electric yellow forklift in warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSfTmSp119fVuPLqbxUkfGsDMuqL7e4fLkN2IwCkzTXJ73DlYOz6X5a8K3fjpTZOpnOHtWjRhTqZoUbesjfKRxuDeXkMd0vi4bfGH6lrmUYp9ZTLEigDwmRLUXwdQEet23AeTn4qr9jE0fBs9sCerOOFRRHyZJN-Y88L1JgA09nH5cClbLU5lTYmPW_H-vCJ3UxQrNTvYX5OvQMRPQJd0j0GDKkzsVtPrzp6A3VRrWRoeScy5Ikv89skRat5fxRrWZOVmYYkS5lJI"/>
+</div>
+<h3 class="font-bold text-sm">Montacargas Eléctricos</h3>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mt-1">Serie E-Force</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-accent font-bold text-sm">Desde $--</span>
+<span class="material-symbols-outlined text-primary">add_circle</span>
+</div>
+</div>
+<!-- Equipment 2 -->
+<div class="bg-slate-100 dark:bg-card-dark rounded-xl p-3 border border-slate-200 dark:border-slate-800">
+<div class="aspect-square bg-slate-200 dark:bg-slate-900 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+<img class="object-contain" data-alt="Heavy duty internal combustion engine forklift" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOC6633cTICsWa_LsUdjJLEvPNeZTPpZCl5zRx3duKlYf3M2AR62VvSXvdQ83Yi1xw9IMZMHaJ0JS-F0pOjf0CLNxDUHDfsudUpJpdJevW8_py65kHYzVBG6rkJsC3NrlUgB_FT1r-RXxhp41atRg4SGeCh4vDK2kYq2Cc9OU1L07hbOH_qKStzRyXXbFO5QTH-Sexqmqz8CIcsiuohZRCnDqgNZan8INtGwv9tDIlQt4oP-0goXx7rUrTihC9mlGizhxW2AqrgBo"/>
+</div>
+<h3 class="font-bold text-sm">Combustión Interna</h3>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mt-1">Diesel / GLP</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-accent font-bold text-sm">Desde $--</span>
+<span class="material-symbols-outlined text-primary">add_circle</span>
+</div>
+</div>
+<!-- Equipment 3 -->
+<div class="bg-slate-100 dark:bg-card-dark rounded-xl p-3 border border-slate-200 dark:border-slate-800">
+<div class="aspect-square bg-slate-200 dark:bg-slate-900 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+<img class="object-contain" data-alt="Electric pallet jack moving cargo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrCtcOdWW7tlXZmDPEJZiG85LngYZ21cbLrGEXM-6sJtS8R1BcqQygIX-c1-5iQ3-tG1GJFpuFflGyC5kWo3I1FVYNaj58wfvbMtTcVBif2cKT5V20t02h8IWXv82g48pkG7WMSl2uDrtEqMizsOqhlZ2VtBnnqooKvnt-I6zRo2RTiwfDJZCUOZEO0GQUxXcamSNovJZIRcr4lpx3r0NkVnutQW0swwH_sTZaTKkC5FFMM5ZZqbLoiqc14xb79EWDTLu4S2p5OkY"/>
+</div>
+<h3 class="font-bold text-sm">Estibadores Eléctricos</h3>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mt-1">Carga Ligera</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-accent font-bold text-sm">Desde $--</span>
+<span class="material-symbols-outlined text-primary">add_circle</span>
+</div>
+</div>
+<!-- Equipment 4 -->
+<div class="bg-slate-100 dark:bg-card-dark rounded-xl p-3 border border-slate-200 dark:border-slate-800">
+<div class="aspect-square bg-slate-200 dark:bg-slate-900 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+<img class="object-contain" data-alt="Manual hydraulic stacker for warehouse use" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFANAG75e5XCbjMVeRc0r4PQQkrwg3nLYxaFHhk3P5C354HU_OKoQXP3kn0FQjHg0xB-o7QHYhMLFA8AXaNkDhchEVTrUpK9qa51jqi_IfCn0hRsyN0KGG32Pn8WQHU3BD-T5Uhpnl7gqzi3pSJt16MFJz7RpdDw0VPwf8ko83gtk43u5m1tU7MD6C-Eob8dA2PT5myMNgdSCDz46iAwVwkWIcQm1Y3b_dXQSDO8mT6VlVxQj-9xPkMI72s4IFIi_icE1bSRjNS-w"/>
+</div>
+<h3 class="font-bold text-sm">Apiladores Manuales</h3>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mt-1">Hidráulicos</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-accent font-bold text-sm">Desde $--</span>
+<span class="material-symbols-outlined text-primary">add_circle</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900 border-t border-slate-800 px-4 pb-6 pt-2">
+<div class="flex gap-2 justify-around">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-medium">Inicio</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-white" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<p class="text-[10px] font-medium">Catálogo</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">handyman</span>
+<p class="text-[10px] font-medium">Servicios</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">contact_support</span>
+<p class="text-[10px] font-medium">Contacto</p>
+</a>
+</div>
+</nav>
+</body></html>
