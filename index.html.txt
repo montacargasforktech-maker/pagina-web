@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Forktech SAS - Soluciones en Montacargas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "accent": "#f97316",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(16, 22, 34, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between px-4 py-3">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white">forklift</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-lg font-black leading-none tracking-tight text-primary">FORKTECH</h1>
+<p class="text-[10px] font-bold tracking-[0.2em] text-slate-500 dark:text-slate-400">S.A.S. COLOMBIA</p>
+</div>
+</div>
+<button class="p-2 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative @container">
+<div class="relative min-h-[520px] w-full flex flex-col justify-end px-6 pb-16 pt-24 overflow-hidden">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Modern industrial forklift in a clean warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDALexeTE-OWwpVjzMNZ0qRo02cx4eD1YTQFq0dD2tX4VqF8FIX9j3cwhVmaSo9wkIfGR6hAmtviK1um3QRf-H81jzjHgKqTolScqCXYlVXQ0RUOGraPo736VemmfcpVBXLkRJG2xg__dpC_Owoy5IAq342PvF9zouSI_usbGpC-0YnuJDHxymmPXTBG--ZM_PiBcpQXxDoAbBV8OJkVBfNZVr9LutjLXHEoSwRRtgQciOOjB4PMHhOUmDaTaPoT-9SrodbxPC0SF0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+</div>
+<div class="relative z-10 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-3 py-1 w-fit">
+<span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>
+<span class="text-accent text-xs font-bold uppercase tracking-wider">Servicio en Bogotá</span>
+</div>
+<h2 class="text-4xl font-black leading-tight tracking-tight text-white @[480px]:text-5xl">
+                        Soluciones Integrales en <span class="text-primary">Montacargas</span> y Equipos Logísticos
+                    </h2>
+<p class="text-slate-300 text-base max-w-md leading-relaxed">
+                        Mantenimiento preventivo, correctivo y venta de repuestos originales. Calidad industrial a su servicio en toda Colombia.
+                    </p>
+<div class="flex flex-col @[480px]:flex-row gap-3 mt-4">
+<button class="flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-all">
+<span>Solicitar Cotización</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center gap-2 bg-slate-800/80 backdrop-blur hover:bg-slate-700 text-white font-bold py-4 px-8 rounded-xl border border-white/10 transition-all">
+<span>Ver Servicios</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Access Floating Buttons -->
+<div class="fixed bottom-24 right-4 z-40 flex flex-col gap-3">
+<a class="flex items-center gap-3 bg-green-600 text-white pl-4 pr-2 py-2 rounded-full shadow-2xl group border border-green-500" href="#">
+<span class="text-xs font-bold whitespace-nowrap">Servicio Técnico</span>
+<div class="bg-white/20 p-2 rounded-full">
+<span class="material-symbols-outlined text-xl">support_agent</span>
+</div>
+</a>
+<a class="flex items-center gap-3 bg-accent text-white pl-4 pr-2 py-2 rounded-full shadow-2xl group border border-accent/50" href="#">
+<span class="text-xs font-bold whitespace-nowrap">Repuestos</span>
+<div class="bg-white/20 p-2 rounded-full">
+<span class="material-symbols-outlined text-xl">settings</span>
+</div>
+</a>
+</div>
+<!-- Value Propositions -->
+<section class="px-4 py-12 bg-background-light dark:bg-background-dark">
+<div class="mb-8">
+<h3 class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-2">Por qué elegirnos</h3>
+<h4 class="text-2xl font-extrabold text-slate-900 dark:text-white">Excelencia en logística industrial</h4>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">build</span>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Servicio Técnico Especializado</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Contamos con técnicos certificados y herramientas de diagnóstico de última generación para todas las marcas.
+                        </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="size-12 rounded-xl bg-accent/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-accent">package_2</span>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Venta de Repuestos Originales</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Amplio stock de componentes genuinos para garantizar la durabilidad y rendimiento de su flota de montacargas.
+                        </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="size-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-blue-500">verified</span>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Garantía Certificada</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Todos nuestros trabajos cuentan con respaldo oficial y seguimiento post-servicio detallado.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-primary py-12 px-4 rounded-t-[2.5rem]">
+<div class="grid grid-cols-2 gap-8 text-center">
+<div class="flex flex-col">
+<span class="text-4xl font-black text-white">15+</span>
+<span class="text-primary-foreground/70 text-sm font-medium text-white/80">Años de experiencia</span>
+</div>
+<div class="flex flex-col">
+<span class="text-4xl font-black text-white">500+</span>
+<span class="text-primary-foreground/70 text-sm font-medium text-white/80">Clientes activos</span>
+</div>
+<div class="flex flex-col">
+<span class="text-4xl font-black text-white">24/7</span>
+<span class="text-primary-foreground/70 text-sm font-medium text-white/80">Soporte técnico</span>
+</div>
+<div class="flex flex-col">
+<span class="text-4xl font-black text-white">100%</span>
+<span class="text-primary-foreground/70 text-sm font-medium text-white/80">Repuestos originales</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 glass-nav border-t border-slate-200 dark:border-slate-800 px-2 pb-6 pt-2">
+<div class="flex items-center justify-around">
+<a class="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">home</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Inicio</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">engineering</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Servicios</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Cotizar</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Contacto</span>
+</a>
+</div>
+</nav>
+<div class="h-24"></div> <!-- Spacer for fixed nav -->
+</body></html>
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services and Equipment Catalog - Forktech SAS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "accent": "#f97316",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "card-dark": "#1c2636",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Header / Top Bar -->
+<header class="sticky top-0 z-50 flex items-center bg-slate-900 border-b border-slate-800 p-4 justify-between">
+<div class="text-white flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+<h1 class="text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center">Forktech SAS</h1>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-transparent text-white">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</header>
+<main class="pb-24">
+<!-- Hero Section -->
+<div class="relative h-48 w-full bg-slate-800 flex items-end p-6 overflow-hidden">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="Industrial warehouse with forklifts and logistics equipment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMnlkAo-uVACbvtXQ_dFyzYYUCJwvTHG-b03nI7kckoTwL2rpEOaK0N5vLwdDyEArEwtYbi7-ZBOrYXuP0iKTfKId36-wKHXcxOb3C25E_i2GVR5NKQfWuWyuxumGkvldpOBIFQOSuXQS2J9Ja-NjzyyJ-IEDTFFZovNIaWvRpulQuDjN0drPR-ftZPp80E5yBJbj43YkS0Bcwk88ZGed7g3F-Ne4ytioO2j8afGGPpy8VafJqrv7pgDbXK_j4EImZKxLwHuHPT54')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent"></div>
+<div class="relative z-10">
+<h2 class="text-white text-2xl font-bold">Catálogo Pro</h2>
+<p class="text-slate-300 text-sm">Servicios y Equipos en Bogotá</p>
+</div>
+</div>
+<!-- Services Section -->
+<section class="px-4 pt-6">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-xl font-bold tracking-tight">Nuestros Servicios</h2>
+<span class="text-accent text-sm font-semibold">Ver todos</span>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Service Card 1 -->
+<div class="flex bg-slate-100 dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="w-32 h-32 shrink-0 bg-cover bg-center" data-alt="Technician performing preventive maintenance on forklift" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAItpVGqsLCtVnWYvA8X7uzBTYTy_ZMvz4CKScMQEwOXe37A_SU6r6iVD1tRS_ko8aPzQncOLPHIxX86h_72dx26xPF8Txzl0op9vOl-3zHuVqw-Y4pytkTqZpi7juodyz-vCUNEP2aKBfV9jqXLXxqaeiEvpFfUWCZGiu12kCYz13P2p5KrrP_DlG5mnWU5vK7F-WW3QP1vv5hiC5v48nsnTAlXBPxFM6xHL2FO_FeoqxjWOCM_EMGf9JV9YhFWb6nNVXS9krAGG4')"></div>
+<div class="p-4 flex flex-col justify-between flex-1">
+<div>
+<h3 class="font-bold text-base">Mantenimiento Preventivo</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Evite paradas inesperadas y alargue la vida útil.</p>
+</div>
+<button class="mt-2 self-start px-3 py-1 bg-accent text-white text-xs font-bold rounded-full">Más Información</button>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="flex bg-slate-100 dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="w-32 h-32 shrink-0 bg-cover bg-center" data-alt="Mechanical parts and tools for repair" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZRxpp-GFwVc-56j6FCqXgYmsw0WshaLYRbUmSH8sYl2fxMrVrlIdQik0AnfXAOQRgRJU_4tQF4k4U2Rc3K9W6-qOCMx-NSXAS1iJr9wTD8Lf2Z5piX7HTj7W3J62cJBG990csU3YOD6875p1ZheWl-s5H-I3zTXwrN7hxkLnk03FMSulscQXQNh_3da6fyil6HK8csVeFamlUzIdySb8R-e8TQQDujLU7TfXvqsqaS_aqQdkb9rc3EvM1nfpSeQ38VoBUwpoelkI')"></div>
+<div class="p-4 flex flex-col justify-between flex-1">
+<div>
+<h3 class="font-bold text-base">Mantenimiento Correctivo</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Reparaciones técnicas de alta complejidad.</p>
+</div>
+<button class="mt-2 self-start px-3 py-1 bg-accent text-white text-xs font-bold rounded-full">Más Información</button>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="flex bg-slate-100 dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="w-32 h-32 shrink-0 bg-cover bg-center" data-alt="Close up of mechanical gears and spare parts" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBt57EGJoIaZUFB7ZRqsAKg6smCrcNfIGWfeWt6b7qT-9YzWenoYlf4_WeoUShGVJiIivPd8fnckpx1iQQsL9YapvURIOMoOjPCR8M2Oth56_Jvv4fYO8cPPQx0zZq70osxE8xBMWISRPTQg-Ql5Ptu13S2AEvIMVHDEVX5yiNnMeD-dZ89HYJyzXUWcIflmqBAa_zvjOs08bLuyRpZ6aL6sBsuvKtta1uLa4QlhDnY-6ymN9U1xa1PdwpEzjJLGRyjk3u8I5grYtA')"></div>
+<div class="p-4 flex flex-col justify-between flex-1">
+<div>
+<h3 class="font-bold text-base">Venta de Repuestos</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">Partes originales para todas las marcas.</p>
+</div>
+<button class="mt-2 self-start px-3 py-1 bg-accent text-white text-xs font-bold rounded-full">Más Información</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Equipment Section -->
+<section class="px-4 pt-8">
+<h2 class="text-xl font-bold tracking-tight mb-4">Equipos Logísticos</h2>
+<div class="grid grid-cols-2 gap-3">
+<!-- Equipment 1 -->
+<div class="bg-slate-100 dark:bg-card-dark rounded-xl p-3 border border-slate-200 dark:border-slate-800">
+<div class="aspect-square bg-slate-200 dark:bg-slate-900 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+<img class="object-contain" data-alt="Modern electric yellow forklift in warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSfTmSp119fVuPLqbxUkfGsDMuqL7e4fLkN2IwCkzTXJ73DlYOz6X5a8K3fjpTZOpnOHtWjRhTqZoUbesjfKRxuDeXkMd0vi4bfGH6lrmUYp9ZTLEigDwmRLUXwdQEet23AeTn4qr9jE0fBs9sCerOOFRRHyZJN-Y88L1JgA09nH5cClbLU5lTYmPW_H-vCJ3UxQrNTvYX5OvQMRPQJd0j0GDKkzsVtPrzp6A3VRrWRoeScy5Ikv89skRat5fxRrWZOVmYYkS5lJI"/>
+</div>
+<h3 class="font-bold text-sm">Montacargas Eléctricos</h3>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mt-1">Serie E-Force</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-accent font-bold text-sm">Desde $--</span>
+<span class="material-symbols-outlined text-primary">add_circle</span>
+</div>
+</div>
+<!-- Equipment 2 -->
+<div class="bg-slate-100 dark:bg-card-dark rounded-xl p-3 border border-slate-200 dark:border-slate-800">
+<div class="aspect-square bg-slate-200 dark:bg-slate-900 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+<img class="object-contain" data-alt="Heavy duty internal combustion engine forklift" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOC6633cTICsWa_LsUdjJLEvPNeZTPpZCl5zRx3duKlYf3M2AR62VvSXvdQ83Yi1xw9IMZMHaJ0JS-F0pOjf0CLNxDUHDfsudUpJpdJevW8_py65kHYzVBG6rkJsC3NrlUgB_FT1r-RXxhp41atRg4SGeCh4vDK2kYq2Cc9OU1L07hbOH_qKStzRyXXbFO5QTH-Sexqmqz8CIcsiuohZRCnDqgNZan8INtGwv9tDIlQt4oP-0goXx7rUrTihC9mlGizhxW2AqrgBo"/>
+</div>
+<h3 class="font-bold text-sm">Combustión Interna</h3>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mt-1">Diesel / GLP</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-accent font-bold text-sm">Desde $--</span>
+<span class="material-symbols-outlined text-primary">add_circle</span>
+</div>
+</div>
+<!-- Equipment 3 -->
+<div class="bg-slate-100 dark:bg-card-dark rounded-xl p-3 border border-slate-200 dark:border-slate-800">
+<div class="aspect-square bg-slate-200 dark:bg-slate-900 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+<img class="object-contain" data-alt="Electric pallet jack moving cargo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrCtcOdWW7tlXZmDPEJZiG85LngYZ21cbLrGEXM-6sJtS8R1BcqQygIX-c1-5iQ3-tG1GJFpuFflGyC5kWo3I1FVYNaj58wfvbMtTcVBif2cKT5V20t02h8IWXv82g48pkG7WMSl2uDrtEqMizsOqhlZ2VtBnnqooKvnt-I6zRo2RTiwfDJZCUOZEO0GQUxXcamSNovJZIRcr4lpx3r0NkVnutQW0swwH_sTZaTKkC5FFMM5ZZqbLoiqc14xb79EWDTLu4S2p5OkY"/>
+</div>
+<h3 class="font-bold text-sm">Estibadores Eléctricos</h3>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mt-1">Carga Ligera</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-accent font-bold text-sm">Desde $--</span>
+<span class="material-symbols-outlined text-primary">add_circle</span>
+</div>
+</div>
+<!-- Equipment 4 -->
+<div class="bg-slate-100 dark:bg-card-dark rounded-xl p-3 border border-slate-200 dark:border-slate-800">
+<div class="aspect-square bg-slate-200 dark:bg-slate-900 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+<img class="object-contain" data-alt="Manual hydraulic stacker for warehouse use" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFANAG75e5XCbjMVeRc0r4PQQkrwg3nLYxaFHhk3P5C354HU_OKoQXP3kn0FQjHg0xB-o7QHYhMLFA8AXaNkDhchEVTrUpK9qa51jqi_IfCn0hRsyN0KGG32Pn8WQHU3BD-T5Uhpnl7gqzi3pSJt16MFJz7RpdDw0VPwf8ko83gtk43u5m1tU7MD6C-Eob8dA2PT5myMNgdSCDz46iAwVwkWIcQm1Y3b_dXQSDO8mT6VlVxQj-9xPkMI72s4IFIi_icE1bSRjNS-w"/>
+</div>
+<h3 class="font-bold text-sm">Apiladores Manuales</h3>
+<p class="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mt-1">Hidráulicos</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-accent font-bold text-sm">Desde $--</span>
+<span class="material-symbols-outlined text-primary">add_circle</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900 border-t border-slate-800 px-4 pb-6 pt-2">
+<div class="flex gap-2 justify-around">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-medium">Inicio</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-white" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<p class="text-[10px] font-medium">Catálogo</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">handyman</span>
+<p class="text-[10px] font-medium">Servicios</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">contact_support</span>
+<p class="text-[10px] font-medium">Contacto</p>
+</a>
+</div>
+</nav>
+</body></html>
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366", // Professional Navy Blue
+                        "background-light": "#ffffff",
+                        "soft-grey": "#f8fafc",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Información de Contacto y Ubicación - Montacargas Forktech SAS</title>
+<style>
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display text-slate-800 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="flex items-center bg-white p-4 sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+<div class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-slate-100 transition-colors">
+<span class="material-symbols-outlined text-slate-800">arrow_back</span>
+</div>
+<h1 class="text-lg font-bold flex-1 text-center pr-10 text-primary">Contacto</h1>
+</header>
+<main class="flex-1 max-w-4xl mx-auto w-full px-5 py-8">
+<div class="mb-10">
+<h2 class="text-3xl font-extrabold tracking-tight text-primary">Montacargas Forktech SAS</h2>
+<p class="mt-2 text-slate-500 font-medium">Especialistas en mantenimiento y venta de montacargas en Bogotá.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<section class="space-y-6">
+<h3 class="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+<span class="w-1.5 h-6 bg-primary rounded-full"></span>
+                    Envíanos un Mensaje
+                </h3>
+<div class="space-y-5">
+<label class="flex flex-col">
+<span class="text-sm font-semibold mb-1.5 text-slate-700">Nombre</span>
+<input class="w-full rounded-lg border-slate-200 bg-soft-grey text-slate-800 focus:border-primary focus:ring-primary h-12 px-4 transition-all" placeholder="Tu nombre completo" type="text"/>
+</label>
+<label class="flex flex-col">
+<span class="text-sm font-semibold mb-1.5 text-slate-700">Empresa</span>
+<input class="w-full rounded-lg border-slate-200 bg-soft-grey text-slate-800 focus:border-primary focus:ring-primary h-12 px-4 transition-all" placeholder="Nombre de tu empresa" type="text"/>
+</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<label class="flex flex-col">
+<span class="text-sm font-semibold mb-1.5 text-slate-700">Teléfono</span>
+<input class="w-full rounded-lg border-slate-200 bg-soft-grey text-slate-800 focus:border-primary focus:ring-primary h-12 px-4 transition-all" placeholder="Número de contacto" type="tel"/>
+</label>
+<label class="flex flex-col">
+<span class="text-sm font-semibold mb-1.5 text-slate-700">Correo electrónico</span>
+<input class="w-full rounded-lg border-slate-200 bg-soft-grey text-slate-800 focus:border-primary focus:ring-primary h-12 px-4 transition-all" placeholder="ejemplo@correo.com" type="email"/>
+</label>
+</div>
+<label class="flex flex-col">
+<span class="text-sm font-semibold mb-1.5 text-slate-700">Mensaje</span>
+<textarea class="w-full rounded-lg border-slate-200 bg-soft-grey text-slate-800 focus:border-primary focus:ring-primary p-4 transition-all resize-none" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+</label>
+<button class="w-full bg-primary hover:bg-[#002244] text-white font-bold py-4 px-6 rounded-lg transition-all shadow-md flex items-center justify-center gap-2">
+<span>Enviar Solicitud</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</section>
+<section class="space-y-8">
+<h3 class="text-xl font-bold mb-4 text-primary flex items-center gap-2">
+<span class="w-1.5 h-6 bg-primary rounded-full"></span>
+                    Detalles de Contacto
+                </h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4 group">
+<div class="bg-primary/5 p-3 rounded-xl border border-primary/10 transition-colors group-hover:bg-primary/10">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="font-bold text-primary">Nuestra Dirección</p>
+<p class="text-slate-600">Calle 23G # 112 - 15, Fontibón, Bogotá, Colombia</p>
+</div>
+</div>
+<div class="flex items-start gap-4 group">
+<div class="bg-primary/5 p-3 rounded-xl border border-primary/10 transition-colors group-hover:bg-primary/10">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<p class="font-bold text-primary">Teléfonos de Contacto</p>
+<p class="text-slate-600 font-medium">+57 310 123 4567<br/>+57 312 987 6543</p>
+</div>
+</div>
+<div class="flex items-start gap-4 group">
+<div class="bg-primary/5 p-3 rounded-xl border border-primary/10 transition-colors group-hover:bg-primary/10">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="font-bold text-primary">Correo Electrónico</p>
+<p class="text-slate-600">montacargasforktech@gmail.com</p>
+</div>
+</div>
+</div>
+<div class="pt-4 space-y-4">
+<a class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-xl transition-transform active:scale-95 shadow-lg" href="#">
+<span class="material-symbols-outlined">chat</span>
+                        WhatsApp Servicio
+                    </a>
+<a class="flex items-center justify-center gap-3 bg-[#128C7E] hover:bg-[#0e7a6e] text-white font-bold py-4 px-6 rounded-xl transition-transform active:scale-95 shadow-lg" href="#">
+<span class="material-symbols-outlined">settings_suggest</span>
+                        WhatsApp Repuestos
+                    </a>
+</div>
+</section>
+</div>
+<section class="mt-16">
+<h3 class="text-xl font-bold mb-6 text-primary flex items-center gap-2">
+<span class="w-1.5 h-6 bg-primary rounded-full"></span>
+                Ubicación en Fontibón
+            </h3>
+<div class="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
+<img alt="Mapa de Ubicación" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSYumzkgv6NAeGBVOH0QIbU79clZ1RcqG6bB8rTfm8Uyd8x25ALn-TIKv-W86oS8Z6ucXtCoM9IOm3rgV84SiW5gbRnWM5v8KCCG6DI_nn6-tgfOigopv5dkNXNOe0wen5g-LrXZzd3xs913TH1MDiYgCv2CuJDflRO17jHepnmMx0hfhWwQPvpqWSr2coISAtVum9vin4qHH8N6wF3589ifkHZe02QFmj9EcgGyTUGG2BTXrKc7sDSsn8Sc1hFxM5brNzfLLjNgk"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary text-white p-3 rounded-full animate-bounce shadow-2xl ring-4 ring-white/20">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-lg text-sm font-bold shadow-lg border border-slate-100 text-primary">
+                    Versalles, Fontibón
+                </div>
+</div>
+</section>
+</main>
+<footer class="mt-16 bg-slate-50 border-t border-slate-200 px-6 py-12">
+<div class="max-w-4xl mx-auto flex flex-col items-center gap-8">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-2 rounded-lg shadow-md">
+<span class="material-symbols-outlined text-white text-xl">precision_manufacturing</span>
+</div>
+<span class="text-2xl font-black tracking-tighter text-primary">FORKTECH</span>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">public</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">share</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">thumb_up</span>
+</a>
+</div>
+<div class="text-center">
+<p class="text-slate-500 font-medium text-sm">© 2024 Montacargas Forktech SAS. Todos los derechos reservados.</p>
+<p class="text-slate-400 text-xs mt-2 uppercase tracking-widest">Bogotá, Colombia - Calle 23G # 112 - 15</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
